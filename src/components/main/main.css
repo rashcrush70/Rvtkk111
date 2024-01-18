@@ -1,0 +1,88 @@
+.our-college{
+    display: grid;
+    grid-template-areas: 
+    'left-side right-side';
+    grid-template-columns: 30% 70%;
+}
+.our-college h1{
+    font-size: 2vw;
+    margin: 15px;
+}
+.left-side{
+    margin-top: 10%;
+    grid-area: left-side;
+}
+.our-college img{
+    grid-area: right-side;
+}
+.links{
+    display: flex;
+    font-size: 1vw;
+    margin: 15px;
+    gap: 40px;
+}
+.link{
+    text-decoration: none;
+    padding: 2%;
+    color: rgb(7, 135, 254);
+    border: 4px solid rgb(7, 135, 254);
+    border-radius: 13px;
+}
+.link:hover{
+    background-color: rgb(7, 135, 254);
+    color: white;
+    transition: 0.3s;
+}
+.card{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    align-items: center;
+    border: 2px solid rgb(7, 135, 254);
+    border-radius: 13px;
+}
+.card-img{
+    width: 80px;
+    margin: 15px;
+    background-color: rgb(7, 135, 254);
+    border-radius: 100%;
+}
+.professions-section{
+    text-align: center;
+    margin: 50px 15px;
+}
+.professions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 50px 15px;
+    text-align: center;
+}
+.info-cont{
+    display: flex;
+}
+@media screen and (max-width: 1200px){
+    .links{
+        font-size: 2vw;
+        gap: 10px;
+    }
+    .link{
+        border: 2px solid rgb(7, 135, 254);
+        border-radius: 5px;
+    }
+    .our-college h1{
+        font-size: 3vw;
+    }
+    .card{
+        width: 150px;
+        font-size: 2vw;
+    }
+    .card-img{
+        width: 40px;
+    }
+    .professions-section{
+        font-size: 2vw;
+    }
+}
