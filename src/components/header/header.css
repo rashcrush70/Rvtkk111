@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    margin: 15px 50px;
+}
+.logo{
+    width: 10%;
+}
+.btn-group {
+    display: flex;
+    align-items: center;
+}
+
+.btn-group{
+    gap: 40px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.Login,.changeLang{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 8px;
+    border: 3px solid rgb(193, 243, 14);
+    border-radius: 13px;
+}
+.Login:hover{
+    background-color: rgb(28, 254, 7);
+    color: rgb(223, 16, 16);
+    transition: 0.3s;
+}
+.changeLang{
+    border: 3px solid rgb(193, 243, 14);
+    cursor: pointer;
+}
+.changeLang:hover{
+    background-color: rgb(103, 194, 0);
+    transition: 0.3s;
+}
+
+
+/* МЕНЮ */
+.burger-button{
+    padding: 3px;
+    width: 30px;
+    background-color: rgb(11, 92, 8);
+    border-radius: 8px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+.burger-button:hover{
+    background-color: rgb(61, 0, 158);
+    transition: 0.3s;
+}
+.triPoloski{
+    display: block;
+    width: 80%  ;
+    height: 4px;
+    background-color: rgb(155, 16, 16);
+    margin: 4px;
+}
+.navigation-panel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(0, 45, 194); /* Adjust the color as needed */
+    padding-top: 60px;
+    transition: 0.3s;
+    /* -webkit-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.2); */
+    z-index: 1;
+}
+.nav-link {
+    display: block;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    /* border-top: 1px solid rgb(0, 158, 8); */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.nav-link:hover {
+    background-color: rgb(160, 196, 3);
+}
+@media screen and (min-width: 1200px) {
+    .burger-button{
+        display: none;
+    }
+    .navigation-panel{
+        display: flex;
+        position: relative;
+        /* background-color: white; */
+        padding: 0;
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    .logo{
+        width: 5%;
+    }
+  }
+  
